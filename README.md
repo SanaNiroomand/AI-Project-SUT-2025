@@ -1,3 +1,42 @@
+# 🚀 Phase 1: Image Segmentation Project
+
+## Overview
+
+This phase focuses on **semantic image segmentation** for road detection using advanced U-Net-based architectures. We implement three models from scratch using **PyTorch**: **U-Net**, **Attention U-Net**, and **Residual Attention U-Net**. These models are trained and evaluated on the **Massachusetts Roads Dataset** to segment road pixels in satellite imagery.
+
+The project is structured as follows:
+
+* **Data Preparation:** Loading, preprocessing, and visualization of images and masks from the dataset.
+* **Model Implementation:** Custom PyTorch modules for the base U-Net, attention gates, and residual blocks.
+* **Training Pipeline:** Data loaders, optimizers, loss functions (e.g., Binary Cross-Entropy with Dice), and training loops.
+* **Evaluation:** Metrics including **Accuracy**, **IoU (Intersection over Union)**, and **Dice Score**, with visualization of predictions.
+
+The implementation supports **GPU acceleration** and includes utilities for hyperparameter tuning, data augmentation, and model checkpointing.
+
+---
+
+## Features
+
+* Custom U-Net architecture with encoder-decoder structure and skip connections.
+* Attention U-Net with **attention gates** for focusing on relevant features and reducing noise.
+* Residual Attention U-Net combining **residual blocks** for deeper networks and improved gradient flow.
+* Dataset handling for the Massachusetts Roads Dataset (TIFF images and binary masks).
+* Data augmentation using torchvision transforms (e.g., random flips, rotations).
+* Training with **Adam optimizer**, **BCE-Dice loss**, and early stopping.
+* Comprehensive evaluation metrics: Accuracy, IoU, Dice Score.
+* Visualization tools for comparing ground truth masks with model predictions.
+* GPU/CPU compatibility with configurable batch sizes and image resolutions (e.g., 256x256).
+
+---
+
+## Results
+
+| Model                  | IoU Score | Dice Score | Validation Loss |
+|------------------------|----------------|-----------------|---------------|
+| U-Net                 | 0.68           | 0.81            | 0.61          |
+| Attention U-Net       | 0.68           | 0.80            | 0.61          |
+| Residual Attention U-Net | 0.69       | 0.81            | 0.60          |
+
 # 🚀 Phase 2: Soft Actor-Critic (SAC) Project
 
 ## Overview
