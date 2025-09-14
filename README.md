@@ -1,31 +1,28 @@
----
-
 # 🚀 Phase 2: Soft Actor-Critic (SAC) Project
 
 ## Overview
 
-This phase implements **Soft Actor-Critic (SAC)**, a modern reinforcement learning algorithm that combines the strengths of **actor-critic methods** with **maximum entropy reinforcement learning**.
+This phase implements **Soft Actor-Critic (SAC)**, a modern reinforcement learning algorithm that combines the strengths of **actor-critic methods** with **maximum entropy reinforcement learning**.  
 Our project is structured in multiple parts:
 
-* **Part 1:** Implemented dataset handling and preprocessing utilities.
-* **Part 2:** Implemented the core reinforcement learning pipeline, including:
+* **Part 1:** Implemented dataset handling and preprocessing utilities.  
+* **Part 2:** Implemented the core reinforcement learning pipeline, including:  
+  * Replay Buffer for experience storage.  
+  * Actor, Critic, and Value networks.  
+  * The SAC Agent class with training (`learn`) and action selection (`choose_action`) routines.  
 
-  * Replay Buffer for experience storage.
-  * Actor, Critic, and Value networks.
-  * The SAC Agent class with training (`learn`) and action selection (`choose_action`) routines.
-
-The implementation is built with **PyTorch**, supports **continuous action spaces**, and is suitable for environments such as **PyBullet** and **Gym**.
+The implementation is built with **PyTorch**, supports **continuous action spaces**, and is suitable for environments such as **PyBullet** and **Gym**.  
 
 ---
 
 ## Features
 
-* Replay Buffer with efficient batch sampling.
-* Actor-Critic architecture with **two Q-networks** to mitigate overestimation bias.
-* Value and Target Value networks for stable training.
-* Policy gradient updates with **reparameterization trick**.
-* Polyak averaging for target network updates.
-* GPU/CPU support.
+* Replay Buffer with efficient batch sampling.  
+* Actor-Critic architecture with **two Q-networks** to mitigate overestimation bias.  
+* Value and Target Value networks for stable training.  
+* Policy gradient updates with **reparameterization trick**.  
+* Polyak averaging for target network updates.  
+* GPU/CPU support.  
 
 ---
 
