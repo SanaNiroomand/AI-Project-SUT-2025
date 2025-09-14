@@ -81,3 +81,15 @@ within just **500 episodes** of training.
 We also tested on **HalfCheetah-v4** from Gymnasium, where the agent appeared to move **faster and smoother**, but we did not record official runs yet.
 
 ---
+
+# 📺 Video Explanations
+
+We have prepared a series of videos that provide:
+
+Code walkthroughs – step-by-step explanations of the implementation .
+
+Conceptual explanations – detailed discussions of the U-net and Soft Actor-Critic algorithm.
+
+👉 You can watch the full playlist here:
+
+[Drive Link](https://drive.google.com/drive/folders/1oJsz55uxuBDsGCVqMHcSRFmC-nxkzmdD?usp=sharing)
